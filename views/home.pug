@@ -1,0 +1,42 @@
+extends base.pug
+
+block scripts
+    scripts(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+
+block content 
+     section#intro
+      div Welcome To MoveThat Dance Acedemy
+      div Eat Sleep Dance Repeat
+     section#mission
+      h2 Our Mission
+      div.card
+          h3 Free Style Dancing
+          div.card-box
+            div.card.img
+             img(src="/static/boydancer.png", alt="")
+            div.card-content
+             p Best dance form is to dance the way you like.Here's the Free style Dances.
+      div.card
+          h3 Quick Sessions
+          div.card-box
+            div.card.img
+             img(src="/static/boydancer1.png",alt="")
+            div.card-content
+             p Want to shake a little bit with our feet?Take this quick lessons.
+      div.card
+          h3 Expert Teaching
+          div.card-box
+            div.card.img
+             img(src="/static/boydancer.png", alt="")
+            div.card-content
+             p     Move it like Pro with this classes.
+     section#sponsors
+       h2 Our Sponsor
+       img(src="/static/apple-seeklogo.com.svg", alt="",class= "spImage")
+       img(src="/static/swarovski-1.svg", alt="",class= "spImage")
+       img(src="/static/disney.svg", alt="",class= "spImage")
+       img(src="/static/hp-hewlett-packard.svg", alt="",class= "spImage")
